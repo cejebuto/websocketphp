@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  web:
+    build: .
+    ports:
+      - "80:80"      # Mapeo para tráfico web HTTP
+      - "8081:8081"  # Mapeo para tráfico WebSocket
+    volumes:
+      - D:\CODIGO_FUENTE\websocketphp\src:/var/www/html
